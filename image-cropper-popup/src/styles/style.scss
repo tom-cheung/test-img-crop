@@ -1,0 +1,62 @@
+body {
+  font-family: monospace;
+  .container {
+    padding: 15px 30px 15px 30px;
+    width: 65rem;
+    // height: 60vh;
+    .row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      grid-gap: 2rem 1rem;
+      .col {
+        display: flex;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        .image-cropper {
+          min-width: 500px;
+          margin-top: 35px;
+          // max-height: 60vh;
+          max-width: 70vw;
+          z-index: 99;
+          width: 30%;
+         
+          #focus-picker-img {
+            max-width: 100%;
+          }
+        }
+            
+        .image-focus {
+          flex-basis: 15vw;
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+    
+            .img-container {
+              background-color: #eee;
+
+              .focused-image {
+                transition: top .25s ease-in-out, left .25s ease-in-out;
+              }    
+              }
+            }
+          }
+            
+          #cropped-container {
+            position: relative;
+          }
+        }   
+      }  
+    }
+  }
+  
+ 

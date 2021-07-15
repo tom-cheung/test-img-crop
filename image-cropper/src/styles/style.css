@@ -1,0 +1,302 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: 500;
+  font-family: 'Proxima Nova, Whitney SSm A', Whitney SSm B, sans-serif, Arial;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/** CSS RESET END **/
+
+body {
+  overflow: hidden;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.wrapper .container {
+  padding: 15px 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 4px;
+}
+
+.selected-list ul {
+  width: 56%;
+  max-height: 275px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-left: 5px;
+}
+
+.selected-list ul li {
+  margin-bottom: 15px;
+  padding-left: 15px;
+  margin-left: 0;
+  padding-right: 20px;
+}
+
+.selected-list .file {
+  position: relative;
+  background: #f5feff;
+  border: 1px solid #e6eced;
+  -webkit-border-radius: 0 2px 0 2px;
+  -moz-border-radius: 0 2px;
+  border-radius: 0 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.selected-list a {
+  width: 25%;
+}
+
+.selected-list a .fileimg {
+  height: 75px;
+  width: 75px;
+  margin: 0 10px 0 0;
+  background-color: #ccc;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.selected-list a .fileimg img {
+  height: inherit;
+}
+
+.selected-list span {
+  margin: 5px 0 0;
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 17px;
+  color: #748590;
+  font-size: 14px;
+  float: left;
+  text-align: left;
+}
+
+.selected-list .file-size {
+  color: #aabac4;
+  margin: 0;
+  font-size: 12px;
+}
+
+.selected-list .file-action {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.selected-list .file-action span {
+  width: 15px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.choose_btn {
+  background: #fff;
+  border: 1px solid #25c2a3;
+  border-radius: 24px;
+  color: #25c2a3 !important;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  float: left;
+}
+
+.choose_btn:focus {
+  outline: 0;
+}
+
+/* Scrollbar Styling */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background: #dfe2e9;
+}
+
+/*Dragula CSS*/
+
+.gu-mirror {
+  list-style: none;
+  position: fixed!important;
+  z-index: 9999!important;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  margin-bottom: 15px;
+  padding-left: 15px;
+  margin-left: 0;
+  padding-right: 20px;
+}
+
+.gu-mirror .file {
+  position: relative;
+  background: #f5feff;
+  border: 1px solid #e6eced;
+  -webkit-border-radius: 0 2px 0 2px;
+  -moz-border-radius: 0 2px;
+  border-radius: 0 2px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+.gu-mirror a {
+  width: 25%;
+}
+
+.gu-mirror .fileimg {
+  height: 75px;
+  width: 75px;
+  margin: 0 10px 0 0;
+  background-color: #ccc;
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.gu-mirror .fileimg img{
+  height: inherit;
+}
+
+.gu-mirror span {
+  margin: 5px 0 0;
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 17px;
+  color: #748590;
+  font-size: 14px;
+  float: left;
+}
+
+.gu-mirror .file-size {
+  color: #aabac4;
+  margin: 0;
+  font-size: 12px;
+}
+
+.gu-mirror .file-action {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.gu-mirror .file-action span {
+  width: 15px;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.gu-hide {
+  display: none!important
+}
+
+.gu-unselectable {
+  -webkit-user-select: none!important;
+  -moz-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important
+}
+
+.gu-transit {
+  border: 2px dashed #063a52;
+  background: #F0F9FF;
+  opacity: 0.2;
+  margin-left: 5px;
+}
+
+.gu-transit .file {
+  opacity: 0;
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.close-icon:hover {
+  opacity: 1;
+}
+
+.close-icon:before, .close-icon:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 16px;
+  width: 2px;
+  background-color: #333;
+}
+
+.close-icon:before {
+  transform: rotate(45deg);
+}
+
+.close-icon:after {
+  transform: rotate(-45deg);
+}
